@@ -1,0 +1,6 @@
+<!--component/msgBtn/index.wxml-->
+<form report-submit="true" bindsubmit="getFormId">
+  <button class="my-class" form-type='submit' bindtap='btnOnClick'>
+    <slot></slot>
+  </button>
+</form>

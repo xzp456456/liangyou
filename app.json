@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/message/index",
+    "pages/user/index",
+    "pages/addmissing/index",
+    "pages/addmission/index",
+    "pages/addmissionFail/index",
+    "pages/addmissionSuccess/index",
+    "pages/navigation/index",
+    "pages/orderDetail/index",
+    "pages/gains/index",
+    "pages/comments/index",
+    "pages/register/index"
+  ],
+  "tabBar": {
+    "color": "#bcbcbc",
+    "selectedColor": "#392e14",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/icon-home.png",
+        "selectedIconPath": "img/icon-home-selected.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息",
+        "iconPath": "img/icon-msg.png",
+        "selectedIconPath": "img/icon-msg-selected.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "img/icon-user.png",
+        "selectedIconPath": "img/icon-user-selected.png"
+      }
+    ]
+  }
+}

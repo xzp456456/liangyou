@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "i-tabs": "../../extend/iview/tabs/index",
+    "i-tab": "../../extend/iview/tab/index",
+    "Login": "/component/login/index"
+  }
+}

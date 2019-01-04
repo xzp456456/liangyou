@@ -1,0 +1,14 @@
+<!--pages/comments/index.wxml-->
+<view class='item'>
+  <view class='list' wx:for="{{comments}}" wx:key="{{index}}">
+    <view class='row'>
+      <view class='order'>
+        <text class='left orderId'>订单号：{{item.order_sno}}</text>
+        <text class='right orderTime'>{{item.create_time}}</text>
+      </view>
+      <view class='os'>
+        <text class='text'>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>

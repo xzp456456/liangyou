@@ -1,0 +1,15 @@
+<!--pages/message/index.wxml-->
+<view class='msg_card' wx:for='{{msgs}}' wx:key='{{index}}' data-dd='{{item.distributor_order_id}}' bindtap='goInOrder' >
+  <text class='time'>{{item.create_time}}</text>
+  <view class='info_card'>
+    <text class='title'>{{item.title}}</text>
+    <text class='content'>{{item.content}}</text>
+    <navigator wx:if='{{item.url}}'>查看详情</navigator>
+  </view>
+</view>
+
+<view class='loading' wx:if="{{isLoading}}"><i-spin i-class='loading_icon' fix></i-spin></view>
+
+<view class='nomore' wx:if="{{showNoMore}}">没有更多数据了</view>
+
+<view class='foot_space'></view>

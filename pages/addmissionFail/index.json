@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "入驻信息",
+  "usingComponents": {
+    "FormIdNav": "/component/formIdNav/index"
+  }
+}

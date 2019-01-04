@@ -1,0 +1,46 @@
+/* pages/comments/index.wxss */
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.list{
+  height: 160rpx;
+  background-color:#ffffff;
+  border-bottom:1rpx solid #F0F0F0;  
+}
+
+.order{
+  padding-top: 24rpx;
+}
+
+.orderId{
+  font-size:33rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(37,37,37,1);
+}
+
+.orderTime{
+  font-size:28rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(37,37,37,1);
+}
+
+.os{
+  padding-top:25rpx; 
+  clear: both;
+  font-size:31rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(85,85,85,1);
+}
+
+.row{
+  width: 90%;
+  margin: 0 auto;
+}

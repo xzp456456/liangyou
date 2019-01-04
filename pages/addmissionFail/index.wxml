@@ -1,0 +1,9 @@
+<!--pages/addmissing/index.wxml-->
+<image src='/img/addmissionFail.png' class='addmission_img' />
+
+<view class='addmission_title'>您的入驻信息审核失败</view>
+
+<view class='addmission_content'>失败原因为：证件信息有问题</view>
+<view class='addmission_content'>（根据后台填写的失败原因展示）</view>
+
+<FormIdNav my-class="apply_btn" url='/pages/register/index'>重新申请</FormIdNav>

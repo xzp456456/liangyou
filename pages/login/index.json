@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "formidBtn": "/component/formIdBtn/index",
+    "Login": "/component/login/index"
+  }
+}

@@ -1,0 +1,41 @@
+/* pages/message/index.wxss */
+.msg_card {
+
+  padding: 55rpx 26rpx 0;
+}
+
+.time {
+  display: block;
+  width: 367rpx;
+  height: 51rpx;
+  margin: 0 auto 33rpx auto;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 51rpx;
+  text-align: center;
+  background-color: #D1D1D1;
+  border-radius: 26rpx;
+}
+
+.info_card {
+  padding: 22rpx 37rpx;
+  font-size: 32rpx;
+  background-color: #fff;
+  border-radius: 14rpx;
+}
+
+.info_card .title {
+  display: block;
+  margin-bottom: 23rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.info_card .content {
+  display: block;
+  margin-bottom: 27rpx;
+}
+
+.info_card navigator {
+  color: #FFC541;
+}

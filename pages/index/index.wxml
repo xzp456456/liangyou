@@ -1,0 +1,170 @@
+<!--pages/orders/index.wxml-->
+<view class='tab_head'>
+  <i-tabs current="{{ current }}"  color="#31C27C" bindchange="tabsChange">
+    <i-tab key="tab1"   title="待接单"></i-tab>
+    <i-tab key="tab2"   title="配送中"></i-tab>
+    <i-tab key="tab3"   title="已完成"></i-tab>
+    <i-tab key="tab4"   title="取消订单"></i-tab>
+  </i-tabs>
+  <view class='counts' wx:show="{{ showIn }}">{{count}}</view>
+</view>
+
+<view class='header_space' />
+
+<view class='tab_container tab1' wx:if="{{current == 'tab1'}}">
+  <navigator class='order' wx:for="{{task}}" wx:key="{{index}}" url='/pages/orderDetail/index?id={{item.distributor_order_id}}'>
+    <view class='info_item sn_status'>
+      <text>订单编号：{{item.order_sno}}</text>
+      <text class='status'>{{status[item.status]}}</text>
+    </view>
+    <view class='product'>
+      <image src='{{item.goods.image}}'></image>
+      <view class='right_side'>
+        <text class='title'>{{item.goods.goods_name}}</text>
+        <view class='bottom_line'>
+          <view>
+            ￥{{item.goods.price}}
+          </view>
+          <text>x{{item.goods.quantity}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='info_item'>
+      <text></text>
+      <text>共<text class='count'>{{item.goods_count}}</text>件</text>
+    </view>
+    <view class='info_item'>
+      <text>配送时间</text>
+      <text>{{item.expected_delivery_time}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送地址</text>
+      <text class='address'>{{item.user_address}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送费</text>
+      <text class='free'>￥{{item.deliver_money}}</text>
+    </view>
+  </navigator>
+</view>
+
+<view class='tab_container' wx:if="{{current == 'tab2'}}">
+  <navigator class='order' url='/pages/orderDetail/index?id={{item.distributor_order_id}}' wx:for="{{pickUp}}" wx:key="{{index}}">
+    <view class='info_item sn_status'>
+      <text>订单编号：{{item.order_sno}}</text>
+      <text class='status'>{{status[item.status]}}</text>
+    </view>
+    <view class='product'>
+      <image src='{{item.goods.image}}'></image>
+      <view class='right_side'>
+        <text class='title'>{{item.goods.goods_name}}</text>
+        <view class='bottom_line'>
+          <view>
+            ￥{{item.goods.price}}
+          </view>
+          <text>x{{item.goods.quantity}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='info_item'>
+      <text></text>
+      <text>共<text class='count'>{{item.goods_count}}</text>件</text>
+    </view>
+    <view class='info_item'>
+      <text>配送时间</text>
+      <text>{{item.expected_delivery_time}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送地址</text>
+      <text class='address'>{{item.user_address}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送费</text>
+      <text class='free'>￥{{item.deliver_money}}</text>
+    </view>
+  </navigator>
+</view>
+
+<view class='tab_container' wx:if="{{current == 'tab3'}}">
+  <navigator class='order' url='/pages/orderDetail/index?id={{item.distributor_order_id}}' wx:for="{{sending}}" wx:key="{{index}}">
+    <view class='info_item sn_status'>
+      <text>订单编号：{{item.order_sno}}</text>
+      <text class='status'>{{status[item.status]}}</text>
+    </view>
+    <view class='product'>
+      <image src='{{item.goods.image}}'></image>
+      <view class='right_side'>
+        <text class='title'>{{item.goods.goods_name}}</text>
+        <view class='bottom_line'>
+          <view>
+            ￥{{item.goods.price}}
+          </view>
+          <text>x{{item.goods.quantity}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='info_item'>
+      <text></text>
+      <text>共<text class='count'>{{item.goods_count}}</text>件</text>
+    </view>
+    <view class='info_item'>
+      <text>配送时间</text>
+      <text>{{item.expected_delivery_time}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送地址</text>
+      <text class='address'>{{item.user_address}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送费</text>
+      <text class='free'>￥{{item.deliver_money}}</text>
+    </view>
+  </navigator>
+</view>
+
+<view class='tab_container' wx:if="{{current == 'tab4'}}">
+  <navigator class='order' url='/pages/orderDetail/index?id={{item.distributor_order_id}}' wx:for="{{complete}}" wx:key="{{index}}">
+    <view class='info_item sn_status'>
+      <text>订单编号：{{item.order_sno}}</text>
+      <text class='status'>{{status[item.status]}}</text>
+    </view>
+    <view class='product'>
+      <image src='{{item.goods.image}}'></image>
+      <view class='right_side'>
+        <text class='title'>{{item.goods.goods_name}}</text>
+        <view class='bottom_line'>
+          <view>
+            ￥{{item.goods.price}}
+          </view>
+          <text>x{{item.goods.quantity}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='info_item'>
+      <text></text>
+      <text>共<text class='count'>{{item.goods_count}}</text>件</text>
+    </view>
+    <view class='info_item'>
+      <text>配送时间</text>
+      <text>{{item.expected_delivery_time}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送地址</text>
+      <text class='address'>{{item.user_address}}</text>
+    </view>
+    <view class='info_item'>
+      <text>配送费</text>
+      <text class='free'>￥{{item.deliver_money}}</text>
+    </view>
+  </navigator>
+</view>
+
+<view class='loading' wx:if="{{isLoading}}">
+  <i-spin i-class='loading_icon' fix></i-spin>
+</view>
+
+<view class='nomore' wx:if="{{showNoMore}}">没有更多数据了</view>
+
+<view class='foot_space'></view>
+
+<Login recommender="{{recommender}}" bind:pageEvent="getPageData"  />

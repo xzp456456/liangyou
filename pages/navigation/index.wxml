@@ -1,0 +1,15 @@
+<!--pages/navigation/index.wxml-->
+<view class='page_body' style='height:{{windowHeight}}'>
+  <view class='console'>
+    <input class='start_addr' value="{{MyAddress}}" >
+    <text />
+    </input>
+    <input class='end_addr' value='{{endAddress}}'  >
+    <text />
+    </input>
+
+    <!-- <FormIdBtn my-class="long_btn main_btn" bind:clickEvent="openLocation">打开导航</FormIdBtn> -->
+  </view>
+
+  <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location polyline='{{polyline}}'></map>
+</view>

@@ -1,0 +1,19 @@
+<!--component/login/index.wxml-->
+<view class="auth_window" style='display:{{auth_window_display}}'>
+  <view class="dialog_window">
+    <view class="auth_content">该页面需要先微信授权登录哦</view>
+    <button class="auth_sure" open-type="getUserInfo"  bindgetuserinfo="onGotUserInfo">去授权</button>
+  </view>
+</view>
+
+<view class="auth_window" style='display:{{auth_phone_display}}'>
+  <view class="dialog_window">
+    <view class="auth_content">申请获取你微信绑定的手机号</view>
+    <form report-submit="true" bindsubmit="getFormId">
+      <button class="auth_sure"  form-type='submit' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">去授权</button>
+      <!-- <input bindinput='getPhone'></input>
+      <button class="auth_sure"   bindtap="getPhoneNumber">去授权</button> -->
+    </form>
+  </view>
+</view>
+

@@ -1,0 +1,85 @@
+/* pages/addmission/index.wxss */
+.set_take_order {
+  display: flex;
+  justify-content: space-between;
+  padding: 24rpx 49rpx 24rpx 52rpx;
+  margin-bottom: 21rpx;
+  font-size: 32rpx;
+  background-color: #fff;
+}
+
+.set_take_order > view {
+  display: flex;
+}
+
+.set_btn {
+  width: 137rpx;
+  height: 51rpx;
+  padding: 0;
+  margin-left: 24rpx;
+  font-size: 28rpx;
+  color: #999;
+  line-height: 51rpx;
+  background-color: #f3f3f3;
+  border-radius: 24rpx;
+}
+
+.active {
+  color: #fff;
+  background-color: #FFC541;
+}
+
+.server_area {
+  padding-left: 52rpx;
+  font-size: 32rpx;
+  background-color: #fff;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 36rpx 30rpx 0;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.add_area_btn {
+  display: inline-block;
+  padding: 0;
+  font-size: 32rpx;
+  line-height: normal;
+  background-color: #fff;
+}
+
+.areas {
+  padding: 33rpx 0 17rpx;
+  margin-bottom: 76rpx;
+}
+
+.areas > view {
+  position: relative;
+  display: inline-block;
+  height: 51rpx;
+  padding: 0 20rpx;
+  margin-right: 47rpx;
+  margin-bottom: 26rpx;
+  font-size: 28rpx;
+  color: #999;
+  line-height: 51rpx;
+  background-color: #f3f3f3;
+}
+
+.delete_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37rpx;
+  height: 37rpx;
+  padding: 0;
+  line-height: 37rpx;
+  transform: translate(50%, -50%);
+}
+
+.delete_btn image {
+  width: 100%;
+  height: 100%;
+}

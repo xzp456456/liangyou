@@ -1,0 +1,6 @@
+<!--pages/addmissing/index.wxml-->
+<image src='/img/addmissionSuccess.png' class='addmission_img' />
+
+<view class='addmission_title'>您已成功入驻</view>
+
+<view class='addmission_content'>请勿重新提交入驻申请！</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "申请入驻",
+  "usingComponents": {
+    "FormIdBtn": "/component/formIdBtn/index"
+  }
+}

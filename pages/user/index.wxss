@@ -1,0 +1,53 @@
+/* pages/user/index.wxss */
+.avatar_name {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 50rpx 30rpx 43rpx;
+  background-color: #fff;
+  border-top: 4rpx solid #f9f9f9;
+}
+
+.avatar_name image {
+  width: 110rpx;
+  height: 110rpx;
+  margin-right: 30rpx;
+}
+
+.avatar_name text {
+  font-size: 34rpx;
+}
+
+.menu {
+  /* margin-top: 21rpx; */
+}
+
+.menu .menu_item {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  padding-right: 0;
+  padding-left: 33rpx;
+  font-size: 31rpx;
+  background-color: #fff;
+}
+
+.menu_item >image {
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.menu_item .right_side {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-right: 38rpx;
+  margin-left: 29rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.menu_item .noborder {
+  border-color: transparent;
+}

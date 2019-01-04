@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "服务信息",
+  "usingComponents": {
+    "FormIdBtn": "/component/formIdBtn/index",
+    "i-icon": "../../extend/iview/icon/index"
+  }
+}

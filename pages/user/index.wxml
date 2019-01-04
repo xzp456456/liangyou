@@ -1,0 +1,55 @@
+<!--pages/user/index.wxml-->
+<view class='avatar_name'>
+  <image src='{{userInfo.avatarUrl}}'></image>
+  <text>{{userInfo.nickName}}</text>
+</view>
+
+<view class='menu menu_1'>
+  <FormIdNav my-class='menu_item'  bindtap="changeIndex">
+    <image src='/img/icon-realname.png'></image>
+    <view class='right_side'>
+      <text>实名认证</text>
+      <i-icon type="enter" size="22" color="#cbcbcb" />
+    </view>
+  </FormIdNav>
+  <FormIdNav my-class='menu_item' url='/pages/gains/index?changeTitle=1'>
+    <image src='/img/icon-userinfo.png'></image>
+    <view class='right_side'>
+      <text>今日战绩</text>
+      <i-icon type="enter" size="22" color="#cbcbcb" />
+    </view>
+  </FormIdNav>
+  
+  <FormIdNav my-class='menu_item' url='/pages/gains/index?changeTitle=0'>
+    <image src='/img/icon-myrecord.png'></image>
+    <view class='right_side'>
+      <text>本月战绩</text>
+      <i-icon type="enter" size="22" color="#cbcbcb" />
+    </view>
+  </FormIdNav>
+  <!-- <FormIdNav my-class='menu_item' url='/pages/income/index'>
+    <image src='/img/icon-income.png'></image>
+    <view class='right_side noborder'>
+      <text>我的收入</text>
+      <i-icon type="enter" size="22" color="#cbcbcb" />
+    </view>
+  </FormIdNav> -->
+  
+</view>
+
+<view class='menu menu_1'>
+  <FormIdNav my-class='menu_item' url='/pages/comments/index'>
+    <image src='/img/icon-evaluate.png'></image>
+    <view class='right_side'>
+      <text>用户评价</text>
+      <i-icon type="enter" size="22" color="#cbcbcb" />
+    </view>
+  </FormIdNav>
+  <!-- <FormIdNav my-class='menu_item' url='/pages/feedback/index'>
+    <image src='/img/icon-feedback.png'></image>
+    <view class='right_side noborder'>
+      <text>用户反馈</text>
+      <i-icon type="enter" size="22" color="#cbcbcb" />
+    </view>
+  </FormIdNav> -->
+</view>

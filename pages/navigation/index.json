@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "路线规划",
+  "usingComponents": {
+    "FormIdBtn": "/component/formIdBtn/index"
+  }
+}

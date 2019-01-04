@@ -1,0 +1,61 @@
+<!--pages/orderDetail/index.wxml-->
+<view class='info_item sn_status'>
+  <text>订单编号：{{order.order_sno}}</text>
+  <text class='status'>{{status[order.status]}}</text>
+</view>
+
+<view class='info_item receive_info'>
+  <text class='infoLs'>
+  <text class='name'><!--联系人：-->{{order.user_address.username}}</text>
+  <text class='mobile' bindtap='phoneCall'>{{order.user_address.mobile}}</text>
+  </text>
+  
+  <view class='address'><!--配送地址：-->{{order.user_address.address}}</view>
+
+</view>
+
+<view class='info_item'>
+  <text>配送时间</text>
+  <text>{{order.expected_delivery_time}}</text>
+</view>
+<view class='info_item'>
+  <text>取货店铺</text>
+  <text>{{order.shop.name}}</text>
+</view>
+<view class='info_item'>
+  <text>取货地址</text>
+  <text>{{order.shop.address}}</text>
+</view>
+<view class='info_item'>
+  <text>配送费</text>
+  <text class='free'>￥{{order.deliver_money}}</text>
+</view>
+
+<view class='prod_box'>
+  <view class='product' wx:for="{{order.order_goods}}" wx:key='{{index}}'>
+    <image src='{{item.image}}'></image>
+    <view class='right_side'>
+      <text class='title'>{{item.goods_name}}</text>
+      <view class='bottom_line'>
+        <view>
+          ￥{{item.price}}
+        </view>
+        <text>x{{item.quantity}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='info_item count_box'>
+  <text></text>
+  <text>共<text class='count'>{{order.goods_count}}</text>件</text>
+</view>
+
+<button class='long_btn_r main_btn_r' bindtap='grabOrder' wx:if='{{order.status === 0}}'>抢单</button>
+<button class='long_btn_r main_btn_r' bindtap='pickUp' wx:if='{{order.status === 1}}'>取货</button>
+<button class='long_btn_r main_btn_r' bindtap='sureReceive' wx:if='{{order.status === 2}}'>确认送达</button>
+
+<FormIdNav my-class="long_btn goto_navigator" url='/pages/navigation/index' wx:if='{{order.status ===1||order.status ===2}}'>导航</FormIdNav>
+<FormIdNav my-class="long_btn goto_navigator"  wx:if='{{order.status ===3}}'  url='/pages/abnormal/index?id={{order.distributor_order_id}}'>商品异常反馈</FormIdNav>
+
+<view class='foot_space'></view>

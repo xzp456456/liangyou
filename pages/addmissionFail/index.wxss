@@ -1,0 +1,12 @@
+/* pages/addmissing/index.wxss */
+
+.apply_btn {
+  width: 244rpx;
+  height: 75rpx;
+  margin-top: 46rpx;
+  font-size: 39rpx;
+  color: #392E14;
+  line-height: 75rpx;
+  background: rgba(255, 197, 65, 1);
+  border-radius: 37px;
+}

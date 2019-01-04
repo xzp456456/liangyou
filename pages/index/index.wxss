@@ -1,0 +1,106 @@
+/* pages/orders/index.wxss */
+.tab_head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_space {
+  height: 84rpx;
+}
+
+.order {
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.info_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14rpx 38rpx 14rpx 46rpx;
+  font-size: 29rpx;
+}
+
+.sn_status {
+  padding: 22rpx 38rpx 22rpx 46rpx;
+}
+
+.info_item .status,
+.count {
+  color: #FFC541;
+}
+
+.product {
+  display: flex;
+  align-items: flex-start;
+  padding: 19rpx 38rpx 19rpx 46rpx;
+  margin-bottom: 13rpx;
+  font-size: 29rpx;
+  background-color: #f9f9f9;
+}
+
+.product > image {
+  width: 178rpx;
+  height: 175rpx;
+}
+
+.product .right_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  height: 175rpx;
+  padding-left: 24rpx;
+}
+
+.product .title {
+  flex: 1;
+  font-weight: bold;
+}
+
+.product .bottom_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_line view {
+  font-size: 31rpx;
+  color: #FF4949;
+}
+
+.bottom_line view text {
+  padding-left: 14rpx;
+  font-size: 23rpx;
+  color: #7F7F7F;
+}
+
+.bottom_line >text {
+  font-size: 29rpx;
+  color: #2E2D2D;
+}
+
+.address {
+  width: 402rpx;
+  text-align: right;
+}
+
+.free {
+  color: #FF4949;
+}
+
+.counts{
+  width: 40rpx;
+  height: 40rpx;
+  background:  #FF4949;
+  border-radius:50%; 
+  position: absolute;
+  top: 20rpx;
+  left: 140rpx;
+  z-index: 999;
+  font-size: 25rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+}

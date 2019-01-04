@@ -1,0 +1,33 @@
+<!--pages/addmission/index.wxml-->
+<view class='set_take_order'>
+  <text>是否接单</text>
+  <view>
+    <button class='{{isWork ? "set_btn active" : "set_btn"}}' bindtap='setTakeOrder' data-i='{{1}}'>可接单</button>
+    <button class='{{isWork ? "set_btn" : "set_btn active"}}' bindtap='setTakeOrder' data-i='{{0}}'>不接单</button>
+  </view>
+</view>
+
+<view class='server_area'>
+  <view class='title'>
+    <text>区域</text>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <FormIdBtn my-class='add_area_btn' bind:clickEvent="addArea">
+        <text>添加</text>
+        <i-icon type="enter" size="20" color="#41361D" />
+      </FormIdBtn>
+    </picker>
+  </view>
+
+  <view class='areas'>
+    <view wx:for="{{areaList}}" wx:key='{{index}}'>
+      {{item.area_info}}
+      <button class="delete_btn" catchtap='deleteArea' id='{{item.area_id}}'>
+        <image src='/img/icon-delete.png' />
+      </button>
+    </view>
+  </view>
+</view>
+
+<FormIdBtn my-class="long_btn main_btn" bind:clickEvent="setSeviceInfo">保存</FormIdBtn>
+
+<view class='foot_space'></view>

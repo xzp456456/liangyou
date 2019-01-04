@@ -1,0 +1,7 @@
+<!--pages/addmissing/index.wxml-->
+<image src='/img/addmissing.png' class='addmission_img' />
+
+<view class='addmission_title'>您的入驻申请正在处理</view>
+
+<view class='addmission_content'>请耐心等待，也可联系客服处理！</view>
+<view class='addmission_content'>400-700-8555</view>

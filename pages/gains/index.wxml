@@ -1,0 +1,45 @@
+<!--pages/gains/index.wxml-->
+<view class='order_top'>
+  <view class='left wd'>
+    <view class='order'>
+      <text>已完成（单）</text>
+    </view>
+    <view>
+      <text class='num'>40</text>
+    </view>
+  </view>
+  <view class='left wd'>
+    <view class='order'>
+      <text>预估收入</text>
+    </view>
+    <view>
+      <text class='num'>¥8885.00</text>
+    </view>
+  </view>
+</view>
+<view class='item'>
+  <view class='list'>
+  <view class='row'>
+    <view class='time'>
+      <text>2018-09-12</text>
+    </view>
+    <view class='money'>
+      <text class='left'>完成单数：33</text>
+      <text class='right'>收入：¥2212.00</text>
+    </view>
+    </view>
+    
+  </view>
+  <view class='list'>
+  <view class='row'>
+    <view class='time'>
+      <text>2018-09-12</text>
+    </view>
+    <view class='money'>
+      <text class='left'>完成单数：33</text>
+      <text class='right'>收入：¥2212.00</text>
+    </view>
+    </view>
+    
+  </view>
+</view>
